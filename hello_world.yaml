@@ -1,1 +1,11 @@
+---
+- name: Hello World Sample
+  hosts: skybridge
+  tasks:
+    - name: Hello Message
+      debug:
+        msg: "Hello World!"
 
+# https://docs.ansible.com/ansible/latest/collections/ansible/builtin/pause_module.html
+# https://docs.ansible.com/ansible/latest/user_guide/playbooks_conditionals.html
+# https://docs.ansible.com/ansible/latest/user_guide/playbooks_vars_facts.html
