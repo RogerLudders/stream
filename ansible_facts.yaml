@@ -1,7 +1,7 @@
 ---
 - name: List Ansible Facts
   gather_facts: true
-  hosts: centos9
+  hosts: all
   tasks:
     - debug:
         var: ansible_facts   
