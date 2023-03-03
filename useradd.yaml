@@ -1,7 +1,7 @@
 ---
 - name: Create Local User Account
   gather_facts: false
-  hosts: xcphost2
+  hosts: stream1
   tasks:
     - name: UserAdd
       ansible.builtin.user:
