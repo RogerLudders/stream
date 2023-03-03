@@ -1,7 +1,6 @@
 ---
-- name: Stop all VM's on Hypervisor
-  gather_facts: false
-  hosts: xcphost2
-  tasks:
-    - name: Stopping VM's
-      shell: /usr/local/bin/vm-shutdown-all 
+- name: Create local user account
+  hosts: stream1
+  ansible.builtin.user:
+  name: testuser01
+  expires: -1
