@@ -1,6 +1,9 @@
 ---
-- name: Create local user account
-  hosts: stream1
-  ansible.builtin.user:
-  name: testuser01
-  expires: -1
+- name: Create Local User Account
+  gather_facts: false
+  hosts: xcphost2
+  tasks:
+    - name: UserAdd
+      ansible.builtin.user:
+      name: testuser01
+      expires: -1
