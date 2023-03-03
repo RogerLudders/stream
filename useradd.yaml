@@ -1,6 +1,7 @@
 ---
 - name: Create Local User Account
   gather_facts: false
+  become: true
   hosts: stream1
   tasks:
     - name: UserAdd
